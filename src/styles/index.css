@@ -1,0 +1,135 @@
+@import "reset.css";
+@import "fonts.css";
+@import "components.css";
+
+html {
+    font-family: 'Pixelify Sans', cursive;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BDE0FE;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+.menu__options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.level {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.level-desc {
+    width: 140px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+.level-desc__param {
+    text-transform: capitalize;
+}
+
+.level-desc__param-value {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.game__board {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.board__container {
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.game__timer {
+    font-size: 46px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-front {
+    pointer-events: none;
+    text-align: center;
+}
+
+.game__buttons {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    align-self: end;
+}
+
+.pause__overlay {
+    font-size: 92px;
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 10px);
+    background-color: #ffffff;
+    opacity: 0.7;
+    padding-bottom: 10px;
+}
+
+.lose__overlay {
+    font-size: 36px;
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 10px);
+    background-color: #ffffff;
+    padding-bottom: 10px;
+    border: 1px solid black;
+}

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Pixelify Sans';
+    font-style: normal;
+    font-weight: normal;
+    src:
+            url('../fonts/PixelifySans-Regular.woff') format('woff2'),
+            url('../fonts/PixelifySans-Regular.woff2') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pixelify Sans';
+    font-style: normal;
+    font-weight: 500;
+    src:
+            url('../fonts/PixelifySans-Medium.woff') format('woff2'),
+            url('../fonts/PixelifySans-Medium.woff2') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pixelify Sans';
+    font-style: normal;
+    font-weight: 600;
+    src:
+            url('../fonts/PixelifySans-SemiBold.woff') format('woff2'),
+            url('../fonts/PixelifySans-SemiBold.woff2') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pixelify Sans';
+    font-style: normal;
+    font-weight: bold;
+    src:
+            url('../fonts/PixelifySans-Bold.woff') format('woff2'),
+            url('../fonts/PixelifySans-Bold.woff2') format('woff');
+    font-display: swap;
+}

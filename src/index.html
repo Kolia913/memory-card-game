@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+</head>
+<body>
+<main class="container">
+    <div class="menu" id="menu">
+         <h1 class="menu__title">Memory card game</h1>
+        <form class="menu__options" id="level_form">
+            <div class="level">
+                <div class="level__choice">
+                    <label class="level__choice-item"> Easy
+                        <input type="radio" name="level" value="easy" id="level_1" checked>
+                        <span class="checkbox"></span>
+                    </label>
+                    <label class="level__choice-item"> Medium
+                        <input type="radio" name="level" value="medium" id="level_2">
+                        <span class="checkbox"></span>
+                    </label>
+                    <label class="level__choice-item"> Hard
+                        <input type="radio" name="level" value="hard" id="level_3">
+                        <span class="checkbox"></span>
+                    </label>
+                </div>
+                <div class="level-desc" id="level_desc">
+
+                </div>
+            </div>
+            <input type="submit" class="button" value="PLAY!">
+        </form>
+    </div>
+
+    <div class="game" id="game">
+        <div class="game__timer" id="timer-wrapper">
+            <span id="timer">00:00</span>
+        </div>
+
+        <div id="board-container" class="board__container">
+        </div>
+
+        <div class="game__buttons" id="buttons">
+            <button class="button" id="back-btn">
+                Back
+            </button>
+            <button class="button" id="restart-btn">
+                Restart
+            </button>
+        </div>
+    </div>
+</main>
+</body>
+</html>
