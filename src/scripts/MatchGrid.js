@@ -233,9 +233,10 @@ class GameState {
 }
 
 function cardClick(evt) {
-    if(!gameState) {
+    if(!gameState || evt.target.classList.contains('flipped')) {
         return
     }
+
     flipAnimation(evt.target)
     if(!gameState.isOnCardOpened) {
         gameState.firstCard = {
